@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block content %}
+<h1>Member Dashboard</h1>
+<h3>My Borrowed Books</h3>
+{% if member_books %}
+<table>
+    <tr>
+        <th>Book</th>
+        <th>Issue Date</th>
+        <th>Due Date</th>
+        <th>Fine</th>
+    </tr>
+    {% for book in member_books %}
+    <tr>
+        <td>{{books[book.book_id]['title'] }}</td>
+        <td>{{ book.issue_date }}</td>
+        <td>{{ book.due_date }}</td>
+        <td>Rs. {{ book.fine }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+{% else %}
+<p>No books borrowed.</p>
+{% endif %}
+{% endblock %}
+</body>
+</html>

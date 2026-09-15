@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block content %}
+<div class="add-book-box">
+    <h2>📖 Add New Book</h2>
+    <form method="POST">
+        <label>Book Title:</label>
+        <input type="text" name="title" placeholder="Enter book title" required>
+        <label>Author:</label>
+        <input type="text" name="author" placeholder="Enter author name" required>
+        <label>Category:</label>
+        <input type="text" name="category" placeholder="Enter category" required>
+        <label>Number of Copies:</label>
+        <input type="number" name="copies" min="1" placeholder="Enter number of copies" required>
+        <button type="submit">Add Book</button>
+
+    </form>
+
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:whitesmoke;
+}
+
+.navbar {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    background-color: skyblue;
+}
+
+.nav-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.main-container{
+    padding: 25px;
+}
+
+h1, h2, h3 {
+    margin-left: 0;
+}
+
+p {
+   margin-left: 0;
+}
+
+form {
+   margin: 20px 0;
+}
+
+input, select {
+    padding: 10px;
+    width: 250px;
+    border:1px solid;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(2, 71, 2);
+}
+
+.login-box,
+.register-box, 
+.admin-login-box { 
+    width: 350px;
+    margin: 50px auto; 
+    padding: 30px; 
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.login-box h2, 
+.register-box h2, 
+.admin-login-box h2 { 
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* Form inside boxes */ 
+.login-box form, 
+.register-box form, 
+.admin-login-box form { 
+    margin: 0; 
+} 
+
+.login-box input, 
+.register-box input, 
+.admin-login-box input { 
+    width: 100%; 
+    box-sizing: border-box;
+    margin-bottom: 15px; 
+} 
+/* Box buttons */ 
+.login-box button, 
+.register-box button, 
+.admin-login-box button { 
+    width: 100%;
+}
+
+table {
+    margin: 20px,0;
+    border-collapse: collapse;
+    background-color: white;
+    width: 95%;
+}
+
+th {
+    background-color:darkslategrey;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+/* #links */
+a {
+   text-decoration: none;
+}
+
+.flash-message {
+    color: green;
+    background-color: white;
+    padding: 10px;
+    margin:15px auto;
+    width: fit-content;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+.messages {
+    text-align: center;
+}
+/* Dashboard Cards */ 
+.dashboard-container { 
+    display: flex;
+     gap: 20px; 
+     flex-wrap: wrap;
+      margin-top: 30px; 
+} 
+.dashboard-card { 
+    background-color: white; 
+    padding: 20px; 
+    width: 180px; 
+    text-align: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+} 
+
+.dashboard-card h3 {
+     margin: 0 0 10px 0; 
+} 
+
+.dashboard-card p { 
+    font-size: 25px; 
+    font-weight: bold; 
+}
+.home-box { 
+    background-color: white; 
+    width: 70%; 
+    margin: 60px auto; 
+    padding: 50px; 
+    text-align: center; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+} 
+
+.home-box h1 { 
+    margin-bottom: 20px; 
+} 
+
+.home-box p { 
+    font-size: 18px; 
+    margin-bottom: 30px; 
+} 
+.home-buttons { 
+    display: flex; 
+    justify-content: center; 
+    gap: 15px; flex-wrap: wrap; 
+} 
+.home-button { 
+    background-color: green; 
+    color: white; 
+    padding: 12px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+} 
+.home-button:hover { 
+    background-color: rgb(2, 71, 2); 
+}
+/* Catalog Page */
+.catalog-box {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.search-box form {
+    margin: 0;
+}
+
+.search-box input {
+    width: 300px;
+}
+
+.no-books {
+    text-align: center;
+    font-size: 18px;
+}
+/* Add Book Page */
+.add-book-box {
+    width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-book-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.add-book-box form {
+    margin: 0;
+}
+
+.add-book-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.add-book-box input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+
+.add-book-box button {
+    width: 100%;
+}
+/* edit-book */
+.edit-book-container {
+    width: 500px;
+    margin: 35px auto;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.edit-book-container h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.edit-book-container p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.edit-book-container label {
+    font-weight: bold;
+}
+
+.edit-book-container input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.edit-book-container button {
+    width: 100%;
+    padding: 11px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* issue book */
+.issue-book-container {
+    width: 500px;
+    margin: 35px auto;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.issue-book-container h1 {
+    text-align: center;
+    margin: 0 0 8px;
+}
+
+.issue-book-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.issue-book-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.issue-book-container select {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.issue-book-container button {
+    width: 100%;
+    padding: 11px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.issue-book-container button:hover {
+    background-color: #006400;
+}

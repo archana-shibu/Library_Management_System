@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block content %}
+<div class="edit-book-container">
+    <h1>Edit Book</h1>
+    <p>Update the book details below.</p>
+    <form method="POST">
+        <label>Book Title:</label>
+        <input type="text" name="title"
+               value="{{ book['title'] }}" required>
+        <br><br>
+        <label>Author:</label>
+        <input type="text" name="author"
+               value="{{ book['author'] }}" required>
+        <br><br>
+        <label>Category:</label>
+        <input type="text" name="category"
+               value="{{ book['category'] }}" required>
+        <br><br>
+        <label>Number of Copies:</label>
+        <input type="number" name="copies"
+               value="{{ book['copies'] }}" required>
+        <br><br>
+        <button type="submit">Update Book</button>
+
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

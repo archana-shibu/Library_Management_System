@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% extends "base.html" %}
+{% block content %}
+<div class="issue-book-container">
+    <h1>Issue Book</h1>
+    <p>Select a member and a book to issue.</p>
+    <form method="POST">
+        <label>Select Member:</label>
+        <select name="username" required>
+            {% for username, member in members.items() %}
+                <option value="{{ username }}">
+                    {{ member['name'] }} ({{ username }})
+                </option>
+            {% endfor %}
+        </select>
+        <label>Select Book:</label>
+        <select name="book_id" required>
+            {% for book in books %}
+                <option value="{{ loop.index0 }}">
+                    {{ book.title }} - Available Copies: {{ book.copies }}
+                </option>
+            {% endfor %}
+        </select>
+        <button type="submit">Issue Book</button>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>
